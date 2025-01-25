@@ -19,7 +19,7 @@
             "name": "cveId",
             "in": "query",
             "required": false,
-            "description": "CVE ID (e.g., CVE-2024-6387)",
+            "description": "CVE ID (e.g., CVE-2019-1010218)",
             "schema": {
               "type": "string"
             }
