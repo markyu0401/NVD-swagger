@@ -11,7 +11,7 @@
     }
   ],
   "paths": {
-    "/": {
+    "/cves/2.0": {
       "get": {
         "summary": "Retrieve CVE Data",
         "parameters": [
@@ -51,7 +51,21 @@
           "403": {
             "description": "Forbidden (API key issue)"
           }
-        }
+        },
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "apiKey"
       }
     }
   }
